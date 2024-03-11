@@ -69,3 +69,23 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
+.tab-active {
+    position: relative;
+    color: #10027E;
+}
+
+.tab-active::after {
+    position: absolute;
+    right: -3px;
+    content: "";
+    top: 10%;
+    width: 6px;
+    height: 30px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #FF7E00;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}

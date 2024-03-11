@@ -4,7 +4,6 @@ import Sidebar from '../../repeats/Sidebar';
 
 const Home = ({ children }) => {
     const [showSidebar, setShowSidebar] = useState(true);
-    const loaction = window.loaction
     const [width, setWidth] = useState(window.innerWidth);
     const toggleSidebar = () => {
         setShowSidebar(prevState => !prevState);
@@ -57,7 +56,7 @@ const Home = ({ children }) => {
                                 </div>
                                 <div className=" bg-white h-[85vh] w-full " style={{}}>
                                     <Header userName="sribabu" toggleSidebar={toggleSidebar} width={width} />
-                                    <div className="w-full flex justify-center  min-h-[70vh]">
+                                    <div className="w-full flex justify-center h-[94.5vh]" style={{ overflowY: "scroll" }} >
                                         {children}
                                     </div>
                                 </div>
